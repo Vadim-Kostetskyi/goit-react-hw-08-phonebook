@@ -8,9 +8,9 @@ const Home = () => {
 
   return (
     <div className="user-menu">
-      <Link className="link" to={'contacts'}>
+      <NavLink className="link" to={'contacts'}>
         Contacts
-      </Link>
+      </NavLink>
       <div className="user-menu_box">
         <p className="user-menu_text">Welcome {user.name}</p>
         <Link
