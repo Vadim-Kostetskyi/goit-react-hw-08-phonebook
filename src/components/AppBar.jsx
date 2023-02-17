@@ -1,4 +1,4 @@
-import { Link, Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import UserMenu from './UserMenu';
 import AuthNav from './AuthNav';
 import { useSelector } from 'react-redux';

@@ -303,5 +303,13 @@ body {
 }
 
 .notFaund {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFaund-img {
   margin-top: 150px;
+  margin-bottom: 50px;
 }

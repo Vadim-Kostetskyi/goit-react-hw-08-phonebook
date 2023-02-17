@@ -1,4 +1,4 @@
-import { Link, Outlet, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const authNav = () => {
   return (

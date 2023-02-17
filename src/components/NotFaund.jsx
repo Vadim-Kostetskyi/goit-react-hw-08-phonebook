@@ -1,8 +1,12 @@
 import img from './not-faund.jpg';
+import { Link } from 'react-router-dom';
 const notFaund = () => {
   return (
-    <div>
-      <img className="notFaund" src={img} alt="page not faund" />
+    <div className="notFaund">
+      <img className="notFaund-img" src={img} alt="page not faund" />
+      <Link className="link" to="/">
+        Home page
+      </Link>
     </div>
   );
 };
