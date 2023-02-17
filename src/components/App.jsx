@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import { refreshUser } from 'redux/AuthOperations';
 import { useDispatch } from 'react-redux';
 import { PablicRoute, PrivatRoute } from 'redux/PrivateRoute';
+import NotFaund from './NotFaund';
+
 const Feedback = () => {
   const dispatch = useDispatch();
 
@@ -43,6 +45,7 @@ const Feedback = () => {
             element={<PablicRoute redirectTo="/login" component={<Form />} />}
           />
         </Route>
+        <Route path="/*" element={<NotFaund />} />
       </Routes>
     </div>
   );

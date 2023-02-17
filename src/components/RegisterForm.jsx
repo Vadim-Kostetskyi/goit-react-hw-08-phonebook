@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { register } from 'redux/AuthOperations';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterForm = () => {
   const dispach = useDispatch();
+  const navigate = useNavigate();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -31,6 +33,7 @@ const RegisterForm = () => {
   const handleSubmit = el => {
     el.preventDefault();
     dispach(register({ name: name, email: email, password: password }));
+    navigate('/contacts');
 
     reset();
   };

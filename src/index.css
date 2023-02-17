@@ -301,3 +301,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.notFaund {
+  margin-top: 150px;
+}

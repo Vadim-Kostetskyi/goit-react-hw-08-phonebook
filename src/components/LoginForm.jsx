@@ -32,7 +32,7 @@ const LoginForm = () => {
     el.preventDefault();
 
     dispach(logIn({ email: email, password: password }));
-    navigate('/');
+    navigate('/contacts');
 
     reset();
   };
