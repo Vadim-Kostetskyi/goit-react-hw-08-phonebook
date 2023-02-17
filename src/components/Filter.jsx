@@ -8,7 +8,6 @@ const Filter = () => {
   const dispach = useDispatch();
   useEffect(() => {
     dispach(filter(filterName));
-    // eslint-disable-next-line
   }, [filterName]);
 
   const changeFilter = el => {
